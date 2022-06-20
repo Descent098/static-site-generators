@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- SEO -->
-        <title>Here is the presentation title</title>
-        <meta name="description" content="This is the description of the presentation">
+        <title>Static site generators</title>
+        <meta name="description" content="An overview of markup transformation & Static Site Generator (SSG) demo">
 
         <!-- URL CANONICAL -->
-        <link rel="canonical" href="https://example.com">
+        <link rel="canonical" href="https://kieranwood.ca/static-site-generators">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
@@ -23,18 +23,18 @@
         <!-- SOCIAL CARDS (ADD YOUR INFO) -->
 
         <!-- FACEBOOK -->
-        <meta property="og:url" content="https://example.com">
+        <meta property="og:url" content="https://kieranwood.ca/static-site-generators">
         <meta property="og:type" content="article">
-        <meta property="og:title" content="Here is the presentation title"> 
-        <meta property="og:description" content="This is the description of the presentation">
-        <meta property="og:updated_time" content="2022-06-20 00:49:22.209021">
-        <meta property="og:image" content="static/images/share-webslides.jpg">
+        <meta property="og:title" content="Static site generators"> 
+        <meta property="og:description" content="An overview of markup transformation & Static Site Generator (SSG) demo">
+        <meta property="og:updated_time" content="2022-06-20 06:52:29.249110">
+        <meta property="og:image" content="Image(title='intro', filename='intro.png', browser=False, width=False, height=False)">
 
         <!-- TWITTER -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Here is the presentation title"> 
-        <meta name="twitter:description" content="This is the description of the presentation"> 
-        <meta name="twitter:image" content="static/images/share-webslides.jpg">
+        <meta name="twitter:title" content="Static site generators"> 
+        <meta name="twitter:description" content="An overview of markup transformation & Static Site Generator (SSG) demo"> 
+        <meta name="twitter:image" content="Image(title='intro', filename='intro.png', browser=False, width=False, height=False)">
 
         <!-- FAVICONS -->
             <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-152.png">
@@ -55,18 +55,307 @@
     <main role='main'>
         <article id='webslides' >
 			<section class='bg-white'>
+                <span class='background' style='background-image:url("./static/images/intro.png")'></span>
                     <div class='wrap aligncenter'>
-                        <h1><strong>Here is the presentation title</strong></h1>
-                        <p class='text-intro'>This is the description of the presentation</p>
+                        <h1><strong>Static site generators</strong></h1>
+                        <p class='text-intro'>An overview of markup transformation & Static Site Generator (SSG) demo</p>
                     </div>
             </section>
 
-			<section class='bg-white slide-center'>
+			<section class='bg-facebook slide-center'>
 				<div class='wrap fadeIn'>
 					<div class='content-center'>
-					<h2>Hello world</h2>
-					<p>for images, put them in /images and just use their filename</p>
-<img src='./static/images/kieran-wood-lp-ice-caps-4k-w-peng.jpg' alt='low poly ice caps' >
+					<h2>What is a static site generator?</h2>
+					<p>A static site generator is a system that allows you to create a website using a template and a set of data. You can think about this as translating/transpiling data from a language or languages to a website. Universally SSG's have 3 parts:</p>
+					<div class='grid content-center'>
+							<ul style='text-align:justify;'>
+								<li>The source/state/content files (or sometimes a single file)</li>
+								<li>The template file(s)</li>
+								<li>The output file(s)</li>
+					</div>
+							</ul>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-facebook slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Why use a SSG?</h2>
+					<div class='grid content-center'>
+							<ul style='text-align:justify;'>
+								<li>Easier to maintain than a static site</li>
+								<li>More configurable than a static site</li>
+								<li>cheaper and less complex than a dynamic site (i.e. wordpress)</li>
+					</div>
+							</ul>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-gray slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Principles of an SSG</h2>
+					<p>There are some common principles that static site generators use that are important to be aware of</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-gray slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>State driven templating</h2>
+					<p>This is the concept that unlike a typical 'static' site there is some sort of state used in conjunction with predefined templates to drive generating the output files</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-gray slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>State driven templating</h2>
+<img src='./static/images/ssg-explainer.png' alt='ssg-explainer' >
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-gray slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Ezcv</h2>
+					<p>This example is using ezcv, here are some links if you're interested</p>
+
+					<a href=https://github.com/Descent098/ezcv target='_blank' rel='external' style='color:#0000ff;'>Ezcv Source</a>
+
+					<a href=https://ezcv.readthedocs.io/en/latest/ target='_blank' rel='external' style='color:#ff0000;'>Ezcv Docs</a>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-gray slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Example (Ezcv)</h2>
+<img src='./static/images/data-transformation.png' alt='data-transformation' >
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-gray slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Source files</h2>
+					<p>Source files are typically human-readable files (though don't have to be) and are used to drive the state of the template files. They are often Markdown or rich source text files, along with some sort of configuration file in JSON, YAML or TOML</p>
+<img src='./static/images/ezcv-config.png' alt='ezcv-config' ><img src='./static/images/ezcv-md.png' alt='ezcv-md' >
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-gray slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Template files</h2>
+					<p>These files are typically HTML-like files that use templating languages to pull data from the source files and generate output files</p>
+<img src='./static/images/ezcv-template.png' alt='ezcv-template' >
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-gray slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Output files</h2>
+					<p>These files are the result at the end that can be hosted somewhere. These will typically be HTML/CSS/JS files along with any additional static files like images.</p>
+<img src='./static/images/ezcv-output.png' alt='ezcv-output' >
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Markup transformation</h2>
+					<p>Lost of SSG's are built on the principle that markup systems (like HTML) are used to express common structures and content. With this the specifics of one system are often analogous to another which means you can convert them 1 to 1 from one form to another (i.e. markdown to HTML)</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Markup transformation</h2>
+<img src='./static/images/compare-markup.png' alt='compare-markup' >
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>This does not work in all cases</h2>
+<img src='./static/images/exception.png' alt='exception' >
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Another example of a SSG would be this presentation</h2>
+					<p>This presentation is built using the ezprez framework. It is a static site generator that uses python to generate HTML files</p>
+
+					<a href=https://github.com/Descent098/ezprez target='_blank' rel='external' style='color:#54ff0a;'>Ezprez Source</a>
+
+					<a href=https://ezprez.readthedocs.io/en/latest/ target='_blank' rel='external' style='color:#4dd;'>Ezprez Docs</a>
+
+					<a href=https://github.com/Descent098/static-site-generators target='_blank' rel='external' style='color:#ff0000;'>Presentation Source</a>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Source files</h2>
+					<p>The source file(s) are written in python using .py files</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Example source for the last slide</h2>
+					<pre><code class='language-python'>from ezprez.core import Slide, Presentation
+from ezprez.components import *
+
+# Creating a slide
+Slide('Source Files', 'The source file(s) are written in python using .py files', background='black')
+
+# Presentation settings
+title = 'Static site generators'
+description = 'An overview of markup transformation &amp Static Site Generator (SSG) demo'
+url = 'https://kieranwood.ca/static-site-generators'
+
+prez = Presentation(title, description, url)
+prez.export('.', force=True, folder_name='Presentation') # Export to ./Presentation
+</code></pre>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Template files</h2>
+					<p>In Ezprez the template files are obfuscated from you and are part of the library itself. They still exist, you just can't interact with them.</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Output files</h2>
+					<p>In this case Ezprez will export out an index.html file which is the presentation and several folders</p>
+<img src='./static/images/ezprez-dir.png' alt='ezprez-dir' >
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Hugo</h2>
+					<p>We use hugo for schulich ignite</p>
+
+					<a href=https://github.com/gohugoio/hugo target='_blank' rel='external' style='color:#54ff0a;'>Hugo Source</a>
+
+					<a href=https://gohugo.io/documentation/ target='_blank' rel='external' style='color:#4dd;'>Hugo Docs</a>
+
+					<a href=https://github.com/Schulich-Ignite/website target='_blank' rel='external' style='color:#ff0000;'>Ignite Site Source</a>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Hugo overview</h2>
+					<p>Hugo uses markdown files for content and TOML files for configuration</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Source files</h2>
+					<p>Hugo uses markdown files for content and TOML files for configuration</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Example source files</h2>
+					<p></p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Template files</h2>
+					<p>Hugo does not have a seperate file type for template or output files, both are .html files</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Example Template files</h2>
+					<p></p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Output files</h2>
+					<p>Hugo will output HTML/CSS/jS files</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Example Output files</h2>
+					<p></p>
+
 					</div>
 				</div>
 			</section>
