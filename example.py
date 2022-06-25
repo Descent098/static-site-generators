@@ -16,7 +16,7 @@ Slide("Most SSG's use markdown", "If you have never heard of it this link will g
 
 ## Ezcv example
 Slide("Ezcv","This example is using ezcv, here are some links if you're interested (example source code in today's folder)", Link("Ezcv Source","https://github.com/Descent098/ezcv", color="#0000ff") ,Link("Ezcv Docs", "https://ezcv.readthedocs.io/en/latest/", color="#ff0000"), background="gray")
-Slide("Example (Ezcv) note that this has been simplified", Image("data-transformation", "data-transformation.png"), background="gray")
+Slide("Example (Ezcv)", "note that this has been simplified", Image("data-transformation", "data-transformation.png"), background="gray")
 
 ## Explaining the different file types
 Slide("Source files", "Source files are typically human-readable files (though don't have to be) and are used to drive the state of the template files. They are often Markdown or rich source text files, along with some sort of configuration file in JSON, YAML or TOML", Image("ezcv-config","ezcv-config.png"), Image("ezcv-md","ezcv-md.png"), background="gray")
@@ -52,7 +52,7 @@ Slide("Output files", "In this case Ezprez will export out an index.html file wh
 
 # Using hugo
 Slide("Hugo", "We use hugo for schulich ignite",Link("Hugo Source", "https://github.com/gohugoio/hugo", color="#54ff0a") ,Link("Hugo Docs", "https://gohugo.io/documentation/"),Link("Ignite Site Source", "https://github.com/Schulich-Ignite/website", color="#ff0000"), background="black-blue")
-Slide("Hugo overview", "Hugo is one of the most popular static site generators that is sed today", background="black-blue")
+Slide("Hugo overview", "Hugo is one of the most popular static site generators that is used today. In order to use hugo you will need golang installed, or use their binary distributions", Link("Hugo Binaries", "https://github.com/gohugoio/hugo/releases", color="#ff0000"), Link("Golang install", "https://go.dev/"), background="black-blue")
 
 ## Explaining the different file types in hugo
 
