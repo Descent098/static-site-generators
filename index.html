@@ -27,7 +27,7 @@
         <meta property="og:type" content="article">
         <meta property="og:title" content="Static site generators"> 
         <meta property="og:description" content="An overview of markup transformation & Static Site Generator (SSG) demo">
-        <meta property="og:updated_time" content="2022-06-20 06:52:29.249110">
+        <meta property="og:updated_time" content="2022-06-25 15:35:43.442213">
         <meta property="og:image" content="Image(title='intro', filename='intro.png', browser=False, width=False, height=False)">
 
         <!-- TWITTER -->
@@ -72,6 +72,22 @@
 								<li>The source/state/content files (or sometimes a single file)</li>
 								<li>The template file(s)</li>
 								<li>The output file(s)</li>
+					</div>
+							</ul>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-facebook slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>What are the alternatives?</h2>
+					<div class='grid content-center'>
+							<ul style='text-align:justify;'>
+								<li>Static (raw html/css/js files)</li>
+								<li>Dynamic (i.e. Wordpress, squarespace etc.)</li>
+								<li>SSG's (right in the middle)</li>
 					</div>
 							</ul>
 
@@ -127,8 +143,20 @@
 			<section class='bg-gray slide-center'>
 				<div class='wrap fadeIn'>
 					<div class='content-center'>
+					<h2>Most SSG's use markdown</h2>
+					<p>If you have never heard of it this link will give you the basics</p>
+
+					<a href=https://www.markdownguide.org/basic-syntax/ target='_blank' rel='external' style='color:#ff0000;'>Markdown basics</a>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-gray slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
 					<h2>Ezcv</h2>
-					<p>This example is using ezcv, here are some links if you're interested</p>
+					<p>This example is using ezcv, here are some links if you're interested (example source code in today's folder)</p>
 
 					<a href=https://github.com/Descent098/ezcv target='_blank' rel='external' style='color:#0000ff;'>Ezcv Source</a>
 
@@ -141,7 +169,7 @@
 			<section class='bg-gray slide-center'>
 				<div class='wrap fadeIn'>
 					<div class='content-center'>
-					<h2>Example (Ezcv)</h2>
+					<h2>Example (Ezcv) note that this has been simplified</h2>
 <img src='./static/images/data-transformation.png' alt='data-transformation' >
 					</div>
 				</div>
@@ -161,8 +189,8 @@
 				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>Template files</h2>
-					<p>These files are typically HTML-like files that use templating languages to pull data from the source files and generate output files</p>
-<img src='./static/images/ezcv-template.png' alt='ezcv-template' >
+					<p>These files are typically HTML-like files that use templating languages to pull data from the source files and generate output files. This is also an example of Code generation</p>
+<img src='./static/images/ezcv-template-full.png' alt='ezcv-template' >
 					</div>
 				</div>
 			</section>
@@ -294,7 +322,17 @@ prez.export('.', force=True, folder_name='Presentation') # Export to ./Presentat
 				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>Hugo overview</h2>
-					<p>Hugo uses markdown files for content and TOML files for configuration</p>
+					<p>Hugo is one of the most popular static site generators that is sed today</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Everything is sections</h2>
+					<p>Hugo like ezcv uses sections to split up content, each section has the content for that section and the template(s). Everytime you create a new section there will be a folder inside layouts with the same name, one in content with the same name, and ideally a file in /archetypes with the same name</p>
 
 					</div>
 				</div>
@@ -313,8 +351,29 @@ prez.export('.', force=True, folder_name='Presentation') # Export to ./Presentat
 			<section class='bg-black-blue slide-center'>
 				<div class='wrap fadeIn'>
 					<div class='content-center'>
-					<h2>Example source files</h2>
-					<p></p>
+					<h2>Archetypes</h2>
+					<p>Archetype files essentially are CONTENT templates that can be used to make sure your markdown files have the correct metadata</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Why use Archetypes?</h2>
+					<p>So for example if you have a section called events that you need a date and an image for, you can write an archetype file to enforce that, which will also use those defaults if people create content at the command line</p>
+<img src='./static/images/example-archetype.png' alt='example-archetype' >
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Example</h2>
+					<p>So if this was in archetypes/events and someone ran the code below it would setup the file for them</p>
+					<pre><code class='language-bash'>hugo new events/event.md</code></pre>
 
 					</div>
 				</div>
@@ -324,7 +383,7 @@ prez.export('.', force=True, folder_name='Presentation') # Export to ./Presentat
 				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>Template files</h2>
-					<p>Hugo does not have a seperate file type for template or output files, both are .html files</p>
+					<p>Hugo does not have a seperate file type for template or output files, both are .html files and hugo enforces a specific file structure that I will explain here</p>
 
 					</div>
 				</div>
@@ -333,8 +392,143 @@ prez.export('.', force=True, folder_name='Presentation') # Export to ./Presentat
 			<section class='bg-black-blue slide-center'>
 				<div class='wrap fadeIn'>
 					<div class='content-center'>
-					<h2>Example Template files</h2>
-					<p></p>
+					<h2>Template syntax</h2>
+					<p>Hugo uses a custom syntax, details for which are available here</p>
+
+					<a href=https://gohugo.io/templates/introduction/ target='_blank' rel='external' style='color:#4dd;'>Hugo Syntax</a>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Template Scope</h2>
+					<p>Hugo silo's access to variables based on scope. There are a lot of rules around this, but when in doubt pass . to a template which will pass the whole site context to the tempalte (this will be important for partials later)</p>
+
+					<a href=https://gohugo.io/variables/ target='_blank' rel='external' style='color:#4dd;'>Hugo scope</a>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>/static</h2>
+					<p>This all of the static files such as css, javascript, fonts and images</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Accessing /static files</h2>
+					<p>Let's say you have a file in /static/css/main.css to access it in templates use /css/main.css as the path</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>/_default</h2>
+					<p>This folder contains all of the 'shells' where things that don't change across pages go (i.e. navbars, stylesheet imports, footers etc.)</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>/_default/baseof.html</h2>
+					<p>This is used as a base template that is invoked when using any files (unless other defaults are specified)</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>/_default/list.html</h2>
+					<p>This is used as the base template that is invoked when using any list.html files</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>/_default/single.html</h2>
+					<p>This is used as the base template that is invoked when using any single.html files</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>sections</h2>
+					<p>This would be a folder with the section name and will house the templates for that section. These are not required if your files in /_default also work for what you need</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>/section/list.html</h2>
+					<p>This file is used for an 'overview' page. For example if you had a section with a bunch of events or blog posts this page would be what you use to show off a LIST of all of them. This also creates a route of /section</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>/section/single.html</h2>
+					<p>This file is what will render individual (SINGLE) pages of content. So this would be the template used to render a page for EACH blog post or EACH event</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Partials</h2>
+					<p>Partials are essentially re-usable snippets that you can embed in other tempaltes. They are very handy for components you will use in various different places like a custom themed blog-post feed. These also work off the code generation mentioned earlier</p>
+<img src='./static/images/partials.png' alt='partials' >
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Partials</h2>
+					<p>You can also pass variables to partials to allow them to be used in different circumstances</p>
+<img src='./static/images/partials-styling.png' alt='Partials Styling' >
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black-blue slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>/Themes</h2>
+					<p>This folder will allow you to put all the content for the templates inside a subdirectory for easy code sharing. Once you have the theme code inside the folder you just need to add the following line to config.toml</p>
+					<pre><code class='language-yaml'>theme = 'theme_name'</code></pre>
 
 					</div>
 				</div>
@@ -345,16 +539,6 @@ prez.export('.', force=True, folder_name='Presentation') # Export to ./Presentat
 					<div class='content-center'>
 					<h2>Output files</h2>
 					<p>Hugo will output HTML/CSS/jS files</p>
-
-					</div>
-				</div>
-			</section>
-
-			<section class='bg-black-blue slide-center'>
-				<div class='wrap fadeIn'>
-					<div class='content-center'>
-					<h2>Example Output files</h2>
-					<p></p>
 
 					</div>
 				</div>
